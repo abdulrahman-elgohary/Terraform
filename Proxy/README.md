@@ -1,3 +1,5 @@
+![Upload](https://github.com/user-attachments/assets/5de1c48b-71fb-4b34-a111-5e578965c01e)
+
 # AWS Infrastructure with Terraform
 
 This project implements a multi-tier AWS infrastructure using Terraform modules. The infrastructure includes VPC networking, security groups, compute resources, and load balancers configured for high availability across multiple availability zones.
