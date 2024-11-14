@@ -53,3 +53,12 @@ Configures load balancers:
 - External load balancer in public subnets
 - Internal load balancer in private subnets
 - Health checks and target group configurations
+
+### Request Flow
+
+1. The user request enters the public-facing load balancer.
+2. The load balancer routes the request to the proxy security group and instances.
+3. The proxy tier handles routing and traffic management, forwarding the request to the private HTTP security group and instances.
+4. The HTTP tier processes the application logic and generates a response. 
+5. The response is sent back through the proxy tier to the external load balancer.
+6. The load balancer delivers the response to the user.
